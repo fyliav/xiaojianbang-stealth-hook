@@ -207,7 +207,7 @@ xiaojianbang_hook --unhook --pid $PID --so libwtf.so --offset 0x4161c
 | .text CRC 校验 | ❌ | ❌ | ❌ | ✅ 不修改代码 |
 | /proc/maps 扫描 | ❌ | ❌ | ❌ | ✅ maps_hide |
 | ptrace 读调试寄存器 | N/A | N/A | N/A | ✅ 假账本 |
-| perf_event_open | N/A | N/A | N/A | ✅ 内核态不占配额 |
+| perf_event_open 枚举 | N/A | N/A | N/A | ✅ 内核态事件用户态不可见 |
 | 线程检测 | ❌ | ❌ | ✅ | ✅ 无线程 |
 | Frida 特征 | ❌ | ✅ | ✅ | ✅ 无关 |
 | TracerPid | ❌ | ✅ | ✅ | ✅ 零 |
